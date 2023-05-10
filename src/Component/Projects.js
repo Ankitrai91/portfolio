@@ -2,10 +2,13 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/forth project.jpg";
 import projImg2 from "../assets/img/second work.jpg";
-import projImg3 from "../assets/img/Movieverse.jpg";
 import projImg4 from "../assets/img/first work.jpg";
 import projImg5 from "../assets/img/fifth work.jpg";
 import projImg6 from "../assets/img/12345.jpg";
+import movieverse from "../assets/img/Movieverse.jpg";
+import portfolio from '../assets/img/Portfolio.PNG'
+import news from '../assets/img/News.PNG'
+import shopping from '../assets/img/Shopping.PNG'
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -13,47 +16,36 @@ import TrackVisibility from "react-on-screen";
 export const Projects = () => {
   const projects = [
     {
-      description: `Constructed a scalable front-end using React JS and Tailwind CSS,
-      integrated Firebase Auth to ensure secure authentication, and employed
-      Firebase Cloud functions to update the database with user ratings.`,
-      imgUrl: projImg3,
       title: "Movie Rating",
-      gitLink: "https://github.com/Ankitrai91/ShoppingWeb/blob/main/src/Context/Context.js",
+      description: `Movie Rating website using React JS,Firebase for otp authentication and database, tailwind CSS `,
+      imgUrl: movieverse,
+      gitLink: "https://github.com/Ankitrai91/portfolio",
       live: "https://movierating-ten.vercel.app/",
     },
     {
-      title: "",
-      description: "To Do List",
-      imgUrl: projImg1,
-      gitLink: "",
+      title: "Portfolio",
+      description: "Portfolio using React JS and bootstrap for CSS",
+      imgUrl: portfolio,
+      gitLink: "https://github.com/Ankitrai91/portfolio",
+      live: "https://portfolio-eight-black-72.vercel.app/",
+    },
+
+    {
+      title: "Shopping Website",
+      description: "Shopping website using React JS,redux, and hooks useContext and useReduce.",
+      imgUrl: shopping,
+      gitLink: `https://github.com/Ankitrai91/ShoppingWeb`,
+      live: "https://shopping-web-plum.vercel.app/",
+    },
+
+    {
+      title: "Daily News",
+      description: "Daily News website using React JS and router DOM and fetching API, and get category wise news",
+      imgUrl: news,
+      gitLink: `https://github.com/Ankitrai91/DailyNews`,
       live: "",
     },
-    {
-      description: "Design & Development",
-      imgUrl: projImg2,
-      gitLink:`https://github.com/Ankitrai91/ShoppingWeb/blob/main/src/Context/Context.js`,
-
-    },
-    
-    {
-      description: "Design & Development",
-      imgUrl: projImg4,
-    },
-    {
-      description: "Design & Development",
-      imgUrl: projImg5,
-    },
-    {
-      description: "Design & Development",
-      imgUrl: projImg6,
-    },{
-      description: "Design & Development",
-      imgUrl: projImg5,
-    },
-    {
-      description: "Design & Development",
-      imgUrl: projImg6,
-    },
+   
   ];
 
   return (
